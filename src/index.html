@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .card:hover .caption {
+            color: rgb(224, 255, 255);
+        }
+    </style>
+    <!-- Navbar  -->
+    <div
+        class="header flex text-cyan-100 justify-between p-4 bg-cyan-950 hover:cursor-pointer hover:bg-cyan-100 hover:text-cyan-700 transition duration-500 ease-in-out w-full">
+        <div class="logo">
+            Our World Clock
+        </div>
+        <div class="menu">
+            &copysr; CreatedByUvaiz
+        </div>
+    </div>
+
+    <!-- Main component  -->
+    <div class="container">
+        <div class="heading">
+            <h1 class="text-center font-extralight text-4xl mt-6">
+                Welcome to the World Clock
+            </h1>
+        </div>
+
+
+        <div
+            class="main-content flex space-x-0 space-y-6 justify-center mt-12 grid-rows-3 w-full md:flex-row flex-col items-center md:space-x-12 md:space-y-0">
+            <!-- India code -->
+            <div
+                class="card h-auto w-72 rounded-xl border-2 border-cyan-600 bg-cyan-50 hover:cursor-pointer hover:bg-cyan-950 transition ease-in-out duration-500">
+                <div class="card-heading flex justify-center mt-7 text-2xl text-cyan-700">
+                    <a>INDIA</a>
+                </div>
+                <div id="india-time" class="flex text-cyan-700 font-bold text-4xl justify-center mt-7">
+                    <!-- Here my time comes -->
+                </div>
+                <div class="caption flex justify-center py-6 text-center px-4 text-cyan-800 font-light">
+                    <a>
+                        India, a land of cultural diversity and vibrant traditions,
+                        Home to ancient temples, majestic forts, and bustling cities,
+                        Where spirituality blends
+                    </a>
+                </div>
+            </div>
+
+            <!-- USA Code -->
+            <div
+                class="card h-auto w-72 rounded-xl border-2 border-cyan-600 bg-cyan-50 hover:cursor-pointer hover:bg-cyan-950 transition ease-in-out duration-500">
+                <div class="card-heading flex justify-center mt-7 text-2xl text-cyan-700">
+                    <a>USA</a>
+                </div>
+                <div id="usa-time" class="flex text-cyan-700 font-bold text-4xl justify-center mt-7">
+                    <!-- Here my time comes -->
+                </div>
+                <div class="caption flex justify-center py-6 text-center px-4 text-cyan-800 font-light">
+                    <a>
+                        The United States of America (USA) is a vast and diverse country known for its democratic
+                        values, cultural influence, and technological advancements.
+                    </a>
+                </div>
+            </div>
+            <!-- Moscow Code -->
+            <div
+                class="card h-auto w-72 rounded-xl border-2 border-cyan-600 bg-cyan-50 hover:cursor-pointer hover:bg-cyan-950 transition ease-in-out duration-500">
+                <div class="card-heading flex justify-center mt-7 text-2xl text-cyan-700">
+                    <a>MOSCOW</a>
+                </div>
+                <div id="moscow-time" class="flex text-cyan-700 font-bold text-4xl justify-center mt-7">
+                    <!-- Here my time comes -->
+                </div>
+                <div class="caption flex justify-center py-6 text-center px-4 text-cyan-800 font-light">
+                    <a>
+                        Moscow, the capital city of Russia, is a dynamic metropolis that blends rich history, stunning
+                        architecture, and vibrant culture. From the iconic Red Square
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- time picker -->
+        <div class="time-picker  md:flex-row flex-col flex space-x-4 justify-center items-center mt-8">
+            <!-- <div class="font-bold text-cyan-700">Set an Alarm For India</div>
+            <input id="alarm" name="alarm" type="time" class="w-32 py-2 px-3 border border-cyan-900 rounded-md focus:outline-none focus:ring-cyan-500 focus:border-cyan-500"> -->
+            <label class="text-cyan-800 font-bold" for="appt">Select a time - According India</label>
+            <input type="time" id="alarm" name="appt">
+
+            <button id="btn" class="bg-cyan-950 hover:bg-cyan-100 hover:text-cyan-950 rounded-2xl translate ease-in-out duration-500 px-4 py-2 hover:border hover:border-cyan-800 text-cyan-200">
+                Stop Alarm
+            </button>
+
+        </div>
+
+
+        <div
+            class="footer flex text-cyan-100 justify-between p-4 bg-cyan-950 hover:cursor-pointer hover:bg-cyan-100 hover:text-cyan-700 transition duration-500 ease-in-out w-full mt-8 ">
+            <div>&copy; UvaizCreations</div>
+            <div> &copy; 2023 WorldClock. All rights reserved.</div>
+        </div>
+
+
+
+
+</body>
+<script src="index.js"></script>
+<!-- <script src="https://kit.fontawesome.com/338e4173fa.js" crossorigin="anonymous"></script> -->
+
+</html>
